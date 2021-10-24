@@ -9,7 +9,7 @@
     <title>Happy Birthday</title>
     <meta charset="UTF-8">
 <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-    <meta name="viewport" content="width=1366">
+    <meta name="viewport" content="width=1300">
     <!-- Google Fonts -->
 <!--    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"type="text/css">
@@ -84,9 +84,58 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
         <div class="balloon"></div>
         <div class="balloon"></div>
         <div class="balloon"></div>
-        <div style="color: white; margin-top: 200px; font-size: 30px">May all your dreams come true and May God crown you with all the success in life. Wishing you many returns of this day. Happy birthday!</div>
+        <div style="color: white; margin-top: 200px; font-size: 25px">May all your dreams come true and May God crown you with all the success in life. Wishing you many returns of this day. Happy birthday!</div>
 <!--        <div class="balloon"></div>-->
 <!--        <div class="balloon"></div>-->
+    </div>
+    <div class="col-5">
+        <div style="min-height: 70px;"></div>
+        <!-- <img class height="23%" class="circular--square" src="newImg.jpg" alt="">
+        <img height="23%" class="circular--square" src="pexels-photo-3617500.jpeg" alt=""> -->
+
+        
+
+
+        <section>
+            <img  style="max-height: 350px; transition: 1s;" class="circular--square slides" src="newImg.jpg" alt="">
+            <img  style="max-height: 350px; transition: 1s;" class="circular--square slides" src="m4.jpg" alt="">
+            <img  style="max-height: 350px; transition: 1s;" class="circular--square slides" src="m2.jpg" alt="">
+            <img  style="max-height: 350px; transition: 1s;" class="circular--square slides" src="m3.jpg" alt="">
+            <!-- <img class="slides" src="external/ph2.jpg" style="width:100%"> -->
+            <!-- <img class="slides" src="external/ph3.jpg" style="width:100%"> -->
+        </section>
+
+        <script type="text/javascript">
+            var index = 0;
+            change();
+            console.log(screen.width);
+            function change() {
+        
+                //Collect all images with class 'slides'
+                var x = document.getElementsByClassName('slides');
+                console.log(x);
+        
+                //Set all the images display to 'none' (invisible)
+                for(var i = 0; i < x.length; i++) { 
+                    x[i].style.display = "none"; 
+                }
+        
+                //Increment index variable
+                index++;
+        
+                //Set index to 1 if it's greater than the amount of images
+                if(index > x.length) { 
+                    index = 1; 
+                }
+        
+                //set image display to 'block' (visible)
+                x[index - 1].style.display = "block";
+        
+                //set loop to change image every 3000 milliseconds (3 seconds)
+                setTimeout(change, 5000);
+            }
+        </script>
+        <div style="margin-right: 200px; color: yellow;">On your birthday we wish for you that whatever you want most in life it comes to you just the way you imagined it or better. Happy birthday!</div>
     </div>
 </div>
 <div class="wish">

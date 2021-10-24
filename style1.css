@@ -2,6 +2,7 @@
     /*background-image: url("https://dl.dropbox.com/s/4ubs90vu8bn5zq2/image.gif");*/
     background-image: url("Ir4 (1).gif");
     overflow: hidden;
+    max-width: 1366px !important;
 }
 
 .wish-frame{
@@ -20,10 +21,44 @@
     transform-origin: center center;
 }
 
+.circular--square {
+    transition: all 1s ease;
+    animation: fadeIn 4s;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+}
+
 .wish-frame:hover{
 
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
+
+.slides{
+    
+    transition: all 1s ease;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .hide-sc::-webkit-scrollbar {
