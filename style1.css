@@ -265,8 +265,8 @@
 
 .balloon {
     display:inline-block;
-    width:120px;
-    height:145px;
+    width:100px;
+    height:125px;
     background:hsl(215,50%,65%);
     border-radius:80%;
     position:relative;
