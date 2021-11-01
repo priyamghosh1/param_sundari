@@ -9,7 +9,7 @@
     margin: 5px;
     border: yellow 1px dashed;
     object-fit: cover;
-    background-image: url("istockphoto-1136810581-612x612.jpg");
+    /* background-image: url("istockphoto-1136810581-612x612.jpg"); */
     /*background-image: url("animated-cute.gif");*/
     background-size: cover;
     background-repeat: no-repeat;
