@@ -26,6 +26,10 @@
     transform-origin: center center;
 }
 
+.wish-frame::-webkit-scrollbar {
+    display: none;
+}
+
 
 
 .circular--square {
