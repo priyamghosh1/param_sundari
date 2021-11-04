@@ -6,6 +6,11 @@
 }
 
 .wish-frame{
+    overflow-y: scroll!important;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    min-height: 250px!important;
+    max-height: 250px!important; 
     margin: 5px;
     border: yellow 1px dashed;
     object-fit: cover;
